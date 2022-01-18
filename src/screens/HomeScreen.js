@@ -34,7 +34,7 @@ const HomeScreen = () =>{
                   </div>
                   <div  className="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 p-1">
                       <div className="card shadow mb-xl-2 mb-lg-2 mg-md-2 mb-sp-1m-2 mb-2">
-                          <h4>Burbuja de Palabras</h4>
+                          <h4>Trabajos</h4>
                               {/* <BarChartScreen/>    */}
                                <BurbujaPalabras/>
                       </div>
