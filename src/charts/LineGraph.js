@@ -26,18 +26,19 @@ ChartJS.register(
     Filler
     );
     //EJE Y
-    const scores = [2, 3, 3, 2, 4, 3, 3, 3, 3];
-    const scores2 = [1, 2, 2, 1, 2, 2, 1, 2, 1];
+    const scores = [10, 15, 18, 25, 30, 23, 12, 19, 16];
+    const scores2 = [18, 17, 14, 11, 20, 21, 29, 38, 40];
     
     //EJE X
-    const labels = [100, 200, 300, 400, 500, 600, 700];
+    const labels = ["", "", "Hombre", "", "Mujer", "", ""];
     
     const options = {
         fill: false,
         responsive: true,
         scales: {
             y: {
-                min:0,
+                min:10,
+                max: 50,
             },
         },
         
@@ -55,7 +56,7 @@ ChartJS.register(
                 datasets: [
                     {
                         
-                        label: 'Mis datos',
+                        label: 'Datos 1',
                         data: scores,
                         tension: 0.3,
                         borderColor: "rgb(69, 75, 107)",
@@ -65,7 +66,7 @@ ChartJS.register(
                     },
                     {
                         
-                        label: 'Mis datos',
+                        label: 'Datos 2',
                         data: scores2,
                         tension: 0.3,
                         borderColor: "rgb(231, 76, 60)",

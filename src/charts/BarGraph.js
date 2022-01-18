@@ -26,7 +26,7 @@ ChartJS.register(
     Filler
     );
     //EJE Y
-    const scores = [2, 3, 3, 2, 4, 3, 3, 3, 3];
+    const scores = [12, 5, 8, 15, 20, 16, 9, 17, 18];
     //EJE X
     const labels = [100, 200, 300, 400, 500, 600, 700];
     
@@ -36,6 +36,7 @@ ChartJS.register(
         scales: {
             y: {
                 min:0,
+                max: 20,
             },
         },
         
@@ -53,13 +54,23 @@ ChartJS.register(
                 datasets: [
                     {
                         
-                        label: 'Mis datos',
+                        label: 'Datos',
                         data: scores,
                         tension: 0.3,
                         borderColor: "rgb(69, 75, 107)",
                         pointRadius: 6,
                         pointBackgroundColor: "rgb(69, 75, 107)",
                         backgroundColor: "rgb(69, 75, 107)",
+                    },
+                    {
+                        
+                        label: 'Datos 2',
+                        data: scores,
+                        tension: 0.3,
+                        borderColor: "rgb(231, 76, 60)",
+                        pointRadius: 6,
+                        pointBackgroundColor: "rgb(231, 76, 60)",
+                        backgroundColor: "rgb(231, 76, 60)",
                     }
                     
                 ],
