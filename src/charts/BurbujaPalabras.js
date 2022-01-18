@@ -66,6 +66,13 @@ function BurbujaPalabras() {
      { text: 'Universidad Cat', value: 200 },
      { text: 'Lic.Administracion', value: 800 },
      { text: 'Lic.Administracion', value: 800 },
+     { text: 'Lic.Administracion', value: 800 },
+     { text: 'Lic.Administracion', value: 800 },
+     { text: 'Lic.Administracion', value: 800 },
+     { text: 'Lic.Administracion', value: 800 },
+     { text: 'Lic.Administracion', value: 800 },
+     { text: 'Lic.Administracion', value: 800 },
+     { text: 'Lic.Administracion', value: 800 },
      { text: 'Lic Informatica', value: 800 },
      { text: 'Lic Informatica', value: 800 },
      { text: 'Lic Informatica', value: 800 },
@@ -74,7 +81,7 @@ function BurbujaPalabras() {
    ];
 
   const fontSize = useCallback((word) => Math.log2(word.value) * 5, []);
-  const rotate = useCallback((word) => word.value % 100, []);
+  const rotate = useCallback((word) => word.value % 50, []);
   const fill = useCallback((d, i) => scaleOrdinal(schemeCategory10)(i), []);
 //   const onWordClick = useCallback((word) => {
 //     console.log(`onWordClick: ${word}`);

@@ -3,3 +3,24 @@
     font-weight: 800px;
     color:red;
 }
+section{
+    margin-bottom: 50px;
+}
+.section1 div:nth-child(1){
+    margin: 0 auto;
+}
+.section2 div:nth-child(1){
+    margin: 0 auto;
+}
+.section3 div:nth-child(1){
+    margin: 0 auto;
+}
+.section4 div:nth-child(1){
+    margin: 0 auto;
+}
+.row{
+    margin: 0 auto;
+}
+.card shadow{
+ margin-left: 500px;
+}

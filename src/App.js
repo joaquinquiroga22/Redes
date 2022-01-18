@@ -11,7 +11,7 @@ function App() {
      <div className="App">
       <Navbar bg = "danger">
          <div className = "container">
-           <Navbar.Brand className="text-white"> Redes</Navbar.Brand>
+           <Navbar.Brand className="text-white">Nodos</Navbar.Brand>
          </div>
       </Navbar>
       <HomeScreen/>
