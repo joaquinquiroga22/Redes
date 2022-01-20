@@ -1,6 +1,7 @@
 import {useMemo} from 'react';
 import React, { useEffect} from "react";
-
+// import FacebookJson from "../FacebookJson.json";
+import {getdata} from '../data/Data.js'
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -25,10 +26,42 @@ ChartJS.register(
     Legend,
     Filler
     );
+
+
+// function useGetdata() {
+//     const [data, setData] = useState([]);
+
+//     useEffect(() => {
+//         fetch("conteo_palabras.json", {
+//             // method: 'POST',
+//             headers: {
+//                 "dataType": "json",
+//                 "Accept": "application/json",
+//             }
+//         })
+//             .then(response => response.json())
+//             .then(datos => {
+//                 console.log(datos)
+//                 setData(datos);
+
+//             })
+//     }, []);
+//     return data
+// }
+
+
     //EJE Y
     const scores = [12, 5, 8, 15, 20, 16, 9, 17, 18];
+    const scores2 = [18, 17, 14, 11, 12, 15, 19, 18, 20];
     //EJE X
     const labels = [100, 200, 300, 400, 500, 600, 700];
+
+    var  labelArray = [];
+    var NameArray = [];
+    var WorkArray = [];
+    //  const newData = FacebookJson.amigos.map((item) => ({
+         
+    //    }));
     
     const options = {
         fill: true,
@@ -49,8 +82,10 @@ ChartJS.register(
     
         
         const data = useMemo(function () {
-            return {
+            
                 
+                return{
+                        
                 datasets: [
                     {
                         
@@ -65,10 +100,10 @@ ChartJS.register(
                     {
                         
                         label: 'Datos 2',
-                        data: scores,
+                        data: scores2,
                         tension: 0.3,
                         borderColor: "rgb(231, 76, 60)",
-                        pointRadius: 6,
+                        pointRadius: 3,
                         pointBackgroundColor: "rgb(231, 76, 60)",
                         backgroundColor: "rgb(231, 76, 60)",
                     }
@@ -76,8 +111,8 @@ ChartJS.register(
                 ],
                 
                 labels,
-            };
             
+                }
         },[]);
         
         

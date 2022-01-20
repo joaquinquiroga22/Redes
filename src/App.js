@@ -3,31 +3,36 @@ import './App.css';
 import {Navbar} from 'react-bootstrap';
 import HomeScreen from './screens/HomeScreen';
 import Prueba2 from './charts/Prueba2';
+import Button from '@material-ui/core/Button';
 
-// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ListaTwt from './Listas/ListaTwt';
 
 function App() {
   return (
-     <div className="App">
-      <Navbar bg = "danger">
-         <div className = "container">
-           <Navbar.Brand className="text-white">Nodos</Navbar.Brand>
-         </div>
-      </Navbar>
-      <HomeScreen/>
-      
-      {/* <getdata/> */}
-     </div>
-    // <Router>
-    //       <Navbar bg = "danger">
+    //  <div className="App">
+    //   <Navbar bg = "danger">
     //      <div className = "container">
-    //        <Navbar.Brand className="text-white">Proyecto Redes</Navbar.Brand>
-    //     </div>
+    //        <Navbar.Brand className="text-white">Nodos</Navbar.Brand>
+    //      </div>
     //   </Navbar>
-    //   <Routes>
-    //   {/* <Route path = '/data' exact element = {<Data/>}/> */}
-    //   </Routes>
-    // </Router>
+    //   <HomeScreen/>
+      
+    //   {/* <getdata/> */}
+    //  </div>
+     <Router>
+           <Navbar bg = "danger">
+          <div className = "container">
+            <Navbar.Brand className="text-white">Proyecto Redes</Navbar.Brand>
+            <Button href="/lista" variant="contained"color= "primary" >Lista</Button>
+         </div>
+       </Navbar>
+       <Routes>
+        <Route path = '/' exact element = {<HomeScreen/>}/> 
+        <Route path = '/lista' exact element = {<ListaTwt/>}/>
+       </Routes>
+     </Router>
   );
 }
 

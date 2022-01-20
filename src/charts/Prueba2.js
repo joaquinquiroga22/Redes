@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Line } from "react-chartjs-2";
+import { Bar } from "react-chartjs-2";
 import axios from "axios";
 
-const Dankmemes = () => {
+const Prueba2 = () => {
   const [chartData, setChartData] = useState({});
   const [employeeSalary, setEmployeeSalary] = useState([]);
   const [employeeAge, setEmployeeAge] = useState([]);
@@ -14,16 +14,17 @@ const Dankmemes = () => {
       .get("FacebookJson.json")
       .then(res => {
         console.log(res);
-        for (const dataObj of res.data.amigos) {
-          empSal.push((dataObj.Name));
-          empAge.push((dataObj.Work));
-        }
+        setEmployeeSalary(empSal);
+        setEmployeeAge(empAge);
+        res.forEach(e =>{
+      console.log(e.Name)
+        })
         setChartData({
-          labels: empAge,
+          labels: empSal,
           datasets: [
             {
               label: "level of thiccness",
-              data: empSal,
+              data: empAge,
               backgroundColor: ["rgba(75, 192, 192, 0.6)"],
               borderWidth: 4
             }
@@ -41,8 +42,8 @@ const Dankmemes = () => {
   }, []);
   return (
    
-        <Line
-          data={chartData}
+        <Bar
+          data={chart}
           options={{
             responsive: true,
             title: { text: "THICCNESS SCALE", display: true },
@@ -72,4 +73,4 @@ const Dankmemes = () => {
     
   );
 };
-export default Dankmemes;
+export default Prueba2;

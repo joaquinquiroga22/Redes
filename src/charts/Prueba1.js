@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {useState,useEffect} from 'react';
 import axios from 'axios';
 import {Bar} from 'react-chartjs-2';
+import Graph from './LineGraph';
  
 function Prueba1()
 {
@@ -24,7 +25,6 @@ function Prueba1()
         countryDetail();
     }, []);
     
-    
     const selectChart = (e) =>
     {   
         axios.get(`FacebookJson.json`)
@@ -37,8 +37,10 @@ function Prueba1()
                 countryName.push(element.Work);
                 budgetName.push(element.Name);
             });
+            console.log(budgetName)
+            console.log(countryName)
             setGraph({
-                labels: countryName,
+                labels: budgetName,
                 datasets: [
                     {
                         label: 'In Billions Dollar',
@@ -58,7 +60,7 @@ function Prueba1()
                             '#CD5C5C'
                         ],
                         borderWidth:0,
-                        data: budgetName
+                        data: countryName
                     }
                 ]
             });
@@ -68,42 +70,25 @@ function Prueba1()
     useEffect(() => {
         selectChart();
     }, []);
-
-     const [didMount, setDidMount] = useState(false); 
+    // useEffect(() => {
+    //     return () => {
+    //       console.log("cleaned up");
+    //     };
+    //   }, []);
     
-     useEffect(() => {
-      setDidMount(true);
-      return () => setDidMount(false);
-     }, [])
+      const [didMount, setDidMount] = useState(false); 
     
-     if(!didMount) {
-     return null;
-     }
+      useEffect(() => {
+           setDidMount(true);
+       return () => setDidMount(false);
+      }, [])
+    
+      if(!didMount) {
+      return null;
+      }
     
     return(
-        <div className="container">
-        <h4 className="text-center text-primary mt-2 mb-3">Graph Chart in ReactJS</h4> 
-        <h6 className="text-center text-success mt-2 mb-3">Country By Defence Budget</h6> 
-        <div className="row mt-3">
-           <div className="col-sm-3">
-            
-              <div className=""> 
-               <table class=" table-bordered graphTable ">
-                
-                <tr>
-                    <th>Country</th>
-                    <th>Budget</th>
-                </tr> 
-                  { getdata.map((name)=>
-                    <tr>
-                      <td>{name.Work}</td>
-                      <td>${name.Name}</td>
-                    </tr>                  
-                 )}   
-               </table>     
-             </div>
-           </div>
-           <div className="col-sm-9">
+       
         <Bar
           data={graph}
            options={{
@@ -118,11 +103,6 @@ function Prueba1()
             }
         }}
         />
-              </div>
-             
-             </div>     
-          </div> 
-        
         );
     }
     export default Prueba1;
