@@ -212,7 +212,7 @@ export default function ListaTwt(){
           secondary="#EmergenciaHídrica"  />
         </ListItem> */}
         <ListItem sx={{marginTop:'10px'}} >
-          <Button href= "/" color = 'secondary'>Volver</Button>
+          <Button variant = "contained" href= "/" color = 'secondary'>Volver</Button>
         </ListItem>
       </List>
       

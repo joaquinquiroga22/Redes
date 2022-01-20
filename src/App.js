@@ -24,14 +24,14 @@ function App() {
     //   {/* <getdata/> */}
     //  </div>
      <Router>
-           <Navbar bg = "danger">
+        <Navbar bg = "danger">
           <div className = "container">
             <Navbar.Brand className="text-white">Nodos</Navbar.Brand>
             <Button href="/lista" variant="contained" color= "primary" endIcon={<TwitterIcon/>} >Lista</Button>
          </div>
        </Navbar>
        <Routes>
-        <Route path = '/' exact element = {<HomeScreen/>}/> 
+        <Route path = '/' exact element = {<HomeScreen/>}/>
         <Route path = '/lista' exact element = {<ListaTwt/>}/>
        </Routes>
      </Router>
