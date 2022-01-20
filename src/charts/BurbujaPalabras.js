@@ -126,13 +126,13 @@ import data from "../data.json";
         return newText;
       };
 
-const fontSize = (word) => word.value / 30;
+const fontSize = (word) => word.value / 40;
 const rotate = (word) => (word.value % 50) - 15;
 
 function BurbujaPalabras() {
   const newData = data.data.map((item) => ({
       text: shortText(item.text),
-      value: Math.random() * 800
+      value: Math.random() * 1000
     }));
    
   return (
