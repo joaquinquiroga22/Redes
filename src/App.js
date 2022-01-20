@@ -26,7 +26,7 @@ function App() {
      <Router>
            <Navbar bg = "danger">
           <div className = "container">
-            <Navbar.Brand className="text-white">Proyecto Redes</Navbar.Brand>
+            <Navbar.Brand className="text-white">Nodos</Navbar.Brand>
             <Button href="/lista" variant="contained" color= "primary" endIcon={<TwitterIcon/>} >Lista</Button>
          </div>
        </Navbar>
