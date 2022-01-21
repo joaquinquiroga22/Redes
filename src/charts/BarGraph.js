@@ -72,6 +72,12 @@ ChartJS.register(
                 max: 20,
             },
         },
+        // legend: {
+        //     display: true,
+        //     labels: {
+        //         color: 'rgb(255, 99, 132)'
+        //     }
+        // }
         
     }
 
