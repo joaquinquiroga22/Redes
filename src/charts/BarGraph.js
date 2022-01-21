@@ -89,7 +89,7 @@ ChartJS.register(
                 datasets: [
                     {
                         
-                        label: 'Datos',
+                        label: "Facebook",
                         data: scores,
                         tension: 0.3,
                         borderColor: "rgb(69, 75, 107)",
@@ -99,7 +99,7 @@ ChartJS.register(
                     },
                     {
                         
-                        label: 'Datos 2',
+                        label: 'Twitter',
                         data: scores2,
                         tension: 0.3,
                         borderColor: "rgb(231, 76, 60)",

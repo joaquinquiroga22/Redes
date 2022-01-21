@@ -1,5 +1,6 @@
 import {useMemo} from 'react';
 import React, { useEffect} from "react";
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 import {
     Chart as ChartJS,
@@ -31,7 +32,7 @@ ChartJS.register(
     
     //EJE X
     const labels = ["", "", "Hombre", "", "Mujer", "", ""];
-    
+     
     const options = {
         fill: false,
         responsive: true,
@@ -56,7 +57,7 @@ ChartJS.register(
                 datasets: [
                     {
                         
-                        label: 'Datos 1',
+                        label: "Facebook",
                         data: scores,
                         tension: 0.3,
                         borderColor: "rgb(69, 75, 107)",
@@ -66,7 +67,7 @@ ChartJS.register(
                     },
                     {
                         
-                        label: 'Datos 2',
+                        label: 'Twitter',
                         data: scores2,
                         tension: 0.3,
                         borderColor: "rgb(231, 76, 60)",
