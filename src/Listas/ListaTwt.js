@@ -65,7 +65,7 @@ export default function ListaTwt(){
         }}
         theme={theme}
       >
-        <h4 style = {{textAlign:'center'}} display= 'inline-block'>Busqueda Twits @Jose Luis Gioja</h4>
+        <h4 style = {{textAlign:'center'}} display= 'inline-block'>Busqueda Twits @Sergio Uñac</h4>
         <ListItem >
           <ListItemAvatar>
             <Avatar>
