@@ -7,7 +7,14 @@ import styles from './HomeScreen.module.css'
 import PieGraph from '../charts/PieGraph.js';
 import BurbujaPalabras from '../charts/BurbujaPalabras.js'
 import Prueba2 from '../charts/Prueba2';
+import Button from '@material-ui/core/Button';
+import RefreshIcon from '@mui/icons-material/Refresh';
 
+
+function refreshPage(){ 
+    window.location.reload(false); 
+  }
+  
 const HomeScreen = () =>{
     return(
 
@@ -47,7 +54,11 @@ const HomeScreen = () =>{
                   <div  className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-2">
                       <div className="card shadow mb-xl-2 mb-lg-2 mg-md-2 mb-sp-1m-2 mb-2">
                           <h4></h4>
+                          
                               {/* <BarChartScreen/>    */}
+                              <Button onClick = {refreshPage} type="refresh" color = 'secondary'>
+                                 {<RefreshIcon/>}
+                              </Button>
                                <BurbujaPalabras/>
                       </div>
                   </div>
