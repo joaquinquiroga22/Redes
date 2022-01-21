@@ -81,8 +81,8 @@ export default function ListaTwt(){
               <Typography variant="subtitle1" display="block" gutterBottom>
               https://twitter.com/user/status
               /1483863563408183297
-              <Typography variant="subtitle2" display="block" gutterBottom>
-              
+              <Typography variant="subtitle1" display="block" gutterBottom>
+              12/01/2022
             </Typography>
             </Typography>
             </Typography>
@@ -107,6 +107,9 @@ export default function ListaTwt(){
             Desarrollo Humano continúa con las inscripciones al programa #Progresar
               <Typography variant="subtitle1" display="block" gutterBottom>
               http://t.co/8DAOAj1H1
+              <Typography variant="subtitle1" display="block" gutterBottom>
+              13/01/2022
+            </Typography>
               <Typography variant="subtitle2" display="block" gutterBottom>
               @sergiounac
             </Typography>
@@ -131,6 +134,9 @@ export default function ListaTwt(){
               <Typography variant="subtitle1" display="block" gutterBottom>
               https://twitter.com/user/status
               /1483839269215121409
+              <Typography variant="subtitle1" display="block" gutterBottom>
+              14/01/2022
+            </Typography>
               <Typography variant="subtitle2" display="block" gutterBottom>
               @sergiounac
             </Typography>
@@ -152,9 +158,12 @@ export default function ListaTwt(){
         <ThemeProvider theme={theme}>
             <Typography variant="h6" display="block" gutterBottom>
               "@diegodesanjuan Juan domingo Biden le llamó a Sergio para adelantarle la noticia y Uñac medio enojado le exigió que no lo den a conocer hasta que Alberto no viniera a la Provincia y así poderle contar de primera mano"
-              <Typography variant="subtitle1" display="inline-block" gutterBottom>
+              <Typography variant="subtitle1" display="block" gutterBottom>
               https://twitter.com/user/status
               /1483605376255737860
+              <Typography variant = "subtitle1" display="block" gutterBottom>
+                15/01/2022
+              </Typography>
               <Typography variant="subtitle2" display="block" gutterBottom>
               @diegodesanjuan
             </Typography>
@@ -179,6 +188,9 @@ export default function ListaTwt(){
               <Typography variant="subtitle1" display="block" gutterBottom>
               https://twitter.com/user/status
               /1484314138536865799
+              <Typography variant = "subtitle1" display="block" gutterBottom>
+                16/01/2022
+              </Typography>
               <Typography variant="subtitle2" display="block" gutterBottom>
               @Gustavo84124185
               @sergiounac
@@ -205,6 +217,9 @@ export default function ListaTwt(){
               <Typography variant="subtitle1" display="block" gutterBottom>
               https://twitter.com/user/status
               /1484283206215999488
+              <Typography variant = "subtitle1" display="block" gutterBottom>
+                17/01/2022
+              </Typography>
               <Typography variant="subtitle2" display="block" gutterBottom>
               @Gustavo84124185
               @sergiounac
@@ -265,6 +280,9 @@ export default function ListaTwt(){
               <Typography variant="subtitle1" display="block" gutterBottom>
               https://twitter.com/user/status
               /1484224358495236107
+              <Typography variant = "subtitle1" display="block" gutterBottom>
+                18/01/2022
+              </Typography>
               <Typography variant="subtitle2" display="block" gutterBottom>
               @sergiounac
               @ferpeirano
@@ -294,6 +312,9 @@ export default function ListaTwt(){
               https://twitter.com/user/
               status
               /1484223729412587522
+              <Typography variant = "subtitle1" display="block" gutterBottom>
+                19/01/2022
+              </Typography>
               <Typography variant="subtitle2" display="block" gutterBottom>
               @sergiounac
             </Typography>
@@ -321,11 +342,13 @@ export default function ListaTwt(){
               https://twitter.com/user
               /status
               /1484223048345694214
+              <Typography variant = "subtitle1" display="block" gutterBottom>
+                20/01/2022
+              </Typography>
               <Typography variant="subtitle2" display="block" gutterBottom>
               @sergiounac
               @ferpeirano
               @agenciaidiar
-            ],
             </Typography>
             </Typography>
             </Typography>
@@ -351,6 +374,9 @@ export default function ListaTwt(){
               https://twitter.com/user
               /status
               /1484210845164916742
+              <Typography variant = "subtitle1" display="block" gutterBottom>
+                21/01/2022
+              </Typography>
               <Typography variant="subtitle2" display="block" gutterBottom>
               @Gustavo84124185
               @sergiounac
