@@ -19,6 +19,13 @@ import BeachAccessIcon from '@mui/icons-material/BeachAccess';
 import Divider from '@mui/material/Divider';
 import { Container, ThemeProvider } from 'react-bootstrap';
 import { Paper } from '@material-ui/core';
+import ExpandLess from '@mui/icons-material/ExpandLess';
+import ExpandMore from '@mui/icons-material/ExpandMore';
+import { ListItemIcon } from '@mui/material';
+import ListItemButton from '@mui/material/ListItemButton';
+import Collapse from '@mui/material/Collapse';
+import AddIcon from '@mui/icons-material/Add';
+import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
  
 // const Demo = styled('div')(({ theme }) => ({
 //     backgroundColor: theme.palette.background.paper,
@@ -31,7 +38,15 @@ const theme = createTheme({
     },
 })
 
+
+
+
 export default function ListaTwt(){
+  const [open, setOpen] = React.useState(false);
+  
+    const handleClickk = () => {
+     setOpen(!open);
+    };
 
     return (
         <div style={{ padding: 16, margin: '80px auto', maxWidth: 1200 }}>
@@ -166,6 +181,7 @@ export default function ListaTwt(){
         </ThemeProvider>
           } 
           secondary=""  />
+          
         </ListItem>
         <ListItem sx={{marginTop:'10px'}} >
           <ListItemAvatar>
@@ -188,6 +204,7 @@ export default function ListaTwt(){
         </ThemeProvider>
           } 
           secondary="#EmergenciaHídrica"  />
+
         </ListItem>
         {/* <ListItem sx={{marginTop:'10px'}} >
           <ListItemAvatar>
@@ -211,13 +228,122 @@ export default function ListaTwt(){
           } 
           secondary="#EmergenciaHídrica"  />
         </ListItem> */}
-        <ListItem sx={{marginTop:'10px'}} >
+      
+      </List>
+      <ListItem style= {{width:'130px',float: 'right'}}>
+      <ListItemButton onClick={handleClickk} >
+        <ListItemIcon>
+        </ListItemIcon>  
+        <ListItemText />
+        {/* Ver Mas */}
+        {open ? <HorizontalRuleIcon /> : <AddIcon />}
+      </ListItemButton>
+      </ListItem>
+      <Collapse in={open} timeout="auto" unmountOnExit>
+      <ListItem sx={{marginTop:'10px'}} >
+          <ListItemAvatar>
+            <Avatar >
+              <TwitterIcon />
+            </Avatar>
+          </ListItemAvatar>
+          <ListItemText      
+          primary={
+        <ThemeProvider theme={theme}>
+            <Typography variant="h6" display="block" gutterBottom>
+              Gioja solicita que se declare emergencia Hídrica Nacional
+              <Typography variant="subtitle1" display="block" gutterBottom>
+              http://t.co/8DAOAj1H1
+              <Typography variant="subtitle2" display="block" gutterBottom>
+              @joseluisgioja @tdosoSanJuan @Frente DeTodos @Diputados_Todos #SanJuan
+            </Typography>
+            </Typography>
+            </Typography>
+        </ThemeProvider>
+          } 
+          secondary="#EmergenciaHídrica"  />
+
+        </ListItem>
+      </Collapse>
+      <Collapse in={open} timeout="auto" unmountOnExit>
+      <ListItem sx={{marginTop:'10px'}} >
+          <ListItemAvatar>
+            <Avatar>
+              <TwitterIcon />
+            </Avatar>
+          </ListItemAvatar>
+          <ListItemText      
+          primary={
+        <ThemeProvider theme={theme}>
+            <Typography variant="h6" display="block" gutterBottom>
+              Gioja solicita que se declare emergencia Hídrica Nacional
+              <Typography variant="subtitle1" display="block" gutterBottom>
+              http://t.co/8DAOAj1H1
+              <Typography variant="subtitle2" display="block" gutterBottom>
+              @joseluisgioja @tdosoSanJuan @Frente DeTodos @Diputados_Todos #SanJuan
+            </Typography>
+            </Typography>
+            </Typography>
+        </ThemeProvider>
+          } 
+          secondary="#EmergenciaHídrica"  />
+
+        </ListItem>
+      </Collapse>
+      <Collapse in={open} timeout="auto" unmountOnExit>
+      <ListItem sx={{marginTop:'10px'}} >
+          <ListItemAvatar>
+            <Avatar>
+              <TwitterIcon />
+            </Avatar>
+          </ListItemAvatar>
+          <ListItemText      
+          primary={
+        <ThemeProvider theme={theme}>
+            <Typography variant="h6" display="block" gutterBottom>
+              Gioja solicita que se declare emergencia Hídrica Nacional
+              <Typography variant="subtitle1" display="block" gutterBottom>
+              http://t.co/8DAOAj1H1
+              <Typography variant="subtitle2" display="block" gutterBottom>
+              @joseluisgioja @tdosoSanJuan @Frente DeTodos @Diputados_Todos #SanJuan
+            </Typography>
+            </Typography>
+            </Typography>
+        </ThemeProvider>
+          } 
+          secondary="#EmergenciaHídrica"  />
+
+        </ListItem>
+      </Collapse>
+      <Collapse in={open} timeout="auto" unmountOnExit>
+      <ListItem sx={{marginTop:'10px'}} >
+          <ListItemAvatar>
+            <Avatar>
+              <TwitterIcon />
+            </Avatar>
+          </ListItemAvatar>
+          <ListItemText      
+          primary={
+        <ThemeProvider theme={theme}>
+            <Typography variant="h6" display="block" gutterBottom>
+              Gioja solicita que se declare emergencia Hídrica Nacional
+              <Typography variant="subtitle1" display="block" gutterBottom>
+              http://t.co/8DAOAj1H1
+              <Typography variant="subtitle2" display="block" gutterBottom>
+              @joseluisgioja @tdosoSanJuan @Frente DeTodos @Diputados_Todos #SanJuan
+            </Typography>
+            </Typography>
+            </Typography>
+        </ThemeProvider>
+          } 
+          secondary="#EmergenciaHídrica"  />
+
+        </ListItem>
+      </Collapse>
+      <ListItem sx={{marginTop:'10px'}} >
           <Button variant = "contained" href= "/" color = 'secondary'>Volver</Button>
         </ListItem>
-      </List>
-      
       </Paper>
       </Container>
-      </div>
+      </div>  
     )
 }
